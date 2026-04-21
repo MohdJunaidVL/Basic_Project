@@ -17,6 +17,7 @@ public class SamplePage {
         driver.findElement(inputtest).sendKeys(name);
         System.out.println(driver.findElement(inputtest).getAttribute("value")+"    value");
         System.out.println(driver.findElement(otherinput).getAttribute("value")+"    value 2");
+        System.out.println("Test");
         Thread.sleep(5000);
     }
 }

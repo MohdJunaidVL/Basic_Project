@@ -41,7 +41,7 @@ public class ApplicationHooks {
         String browserName = prop.getProperty("browser");
         driverFactory = new WebdriverInitializer();
         driver = driverFactory.init_driver(browserName);
-        driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(2));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.get(Constants.URL);
     }
 
